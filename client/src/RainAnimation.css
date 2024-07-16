@@ -1,0 +1,34 @@
+.rain-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  overflow: hidden;
+  border: 5px solid red; /* For debugging */
+}
+
+.rain-drop {
+  position: absolute;
+  top: -100px;
+  width: 2px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.rain-drop:nth-child(odd) {
+  left: calc(var(--i) * 1%);
+  animation-duration: calc(var(--i) * 0.5s + 2s);
+}
+
+.rain-drop:nth-child(even) {
+  left: calc(var(--i) * 1%);
+  animation-duration: calc(var(--i) * 0.5s + 2s);
+  animation-delay: calc(var(--i) * 0.1s);
+}

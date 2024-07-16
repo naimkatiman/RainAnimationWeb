@@ -1,0 +1,36 @@
+@keyframes fall {
+    to {
+        transform: translate(20vw, 100vh); /* Adjust horizontal movement for wind effect */
+    }
+}
+
+@keyframes splash {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.rain-drop {
+    position: absolute;
+    top: -10vh;
+    width: 2px;
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.6);
+    animation: fall linear infinite, splash linear 0.3s forwards;
+}
+
+.splash {
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    opacity: 0;
+    animation: splash 0.3s forwards;
+}
