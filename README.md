@@ -70,6 +70,8 @@ npm start
 
 Open your browser and navigate to `http://localhost:3000` to view the rain animation.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/adec2a94-72d7-4f0a-a495-82dbcd3a5586/deploy-status)](https://app.netlify.com/sites/rainanimationweb/deploys)
+
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
